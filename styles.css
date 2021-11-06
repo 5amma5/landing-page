@@ -28,7 +28,6 @@ body {
     background: #1f2937;
     color: #f9faf8;
     padding: 10px;
-    border: dotted red;
 }
 
 .header .logo {
@@ -151,7 +150,6 @@ ul {
 }
 
 .call-action {
-    border: dotted red;
     justify-content: center;
     margin: 100px auto;
 }
