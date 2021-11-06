@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,700;1,700&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+
+body, 
+ul,
+.header, 
+.hero, 
+.hero-container,
+.information, 
+.info-container,
+.quote,
+.quote-container,
+.call-action,
+.call-container,
+.call-details,
+.footer {
+    display: flex;
+}
+
+body {
+    height: 100vh;
+    margin: 0;
+    flex-direction: column;
+}
+
+.header {
+    /* review later if space-around is better. play with padding/margin/gap too */
+    justify-content: space-around;
+    align-items: center;
+    background: #1f2937;
+    color: #f9faf8;
+}
+
+.header .logo {
+    font-size: 24px;
+    font-weight: 500;
+    color: #f9faf8;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 16px;
+    color: #e5e7eb;
+    font-size: 18px;
+}
+
+.hero {
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    background: #1f2937;
+    gap: 16px;
+}
+
+.hero-container {
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 5px;
+    max-width: 500px;
+}
+
+.hero-container .title {
+    font-size: 48px;
+    font-weight: 900;
+    color: #f9faf8;
+}
+
+.hero-container .text {
+    font-size: 18px;
+    color: #e5e7eb;
+}
+
+.hero img {
+    width: 300px;
+    height: auto;
+}
+
+.information {
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.information .title {
+    font-size: 36px;
+    font-weight: 900;
+    color: #1f2937;
+}
+
+.info-container {
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.info-details {
+    align-items: center;
+    justify-content: center;
+    max-width: 90px;
+    font-size: 11px;
+    text-align: center;
+}
+
+.info-details img {
+    width: 90px;
+    height: auto;
+    border-radius: 14px;
+    border: solid #3882f6;
+}
+
+.quote {
+    background-color: #e5e7eb;
+    flex: 1;
+    justify-content: center;
+}
+
+.quote-container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 800px;
+    gap: 10px;
+}
+
+.quote .text {
+    font-size: 36px;
+    font-style: italic;
+    font-weight: 200;
+}
+
+.quote .name {
+    align-self: flex-end;
+    font-weight: bold;
+    font-size: 24px;
+    padding-right: 50px;
+}
+
+.call-action {
+    border: dotted red;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+}
+
+.call-container {
+    align-items: center;
+    justify-content: space-around;
+    max-width: 800px;
+    border-radius: 10px;
+    background-color: #3882f6;
+    color: white;
+    gap: 80px;
+    padding: 50px;
+}
+
+.call-details {
+    flex-direction: column;
+}
+
+.call-details .title {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.call-details .text {
+    font-size: 16px;
+    color: #e5e7eb;
+}
+
+.footer {
+    justify-content: center;
+    align-items: center;
+    background-color: #1f2937;
+    color: #e5e7eb;
+}
+
+button {
+    width: 150px;
+    height: 30px;
+    background: #3882f6;
+    color: #f9faf8;
+    font-weight: bold;
+    border-radius: 5px;
+    border: 1px solid #f9faf8;
+}
+
+button.hero-butt {
+    border: none;
+}
