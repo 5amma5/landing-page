@@ -75,7 +75,9 @@ ul {
 .hero img {
     width: auto;
     height: 310px;
-    flex-shrink: 3;
+    border-radius: 14px;
+    border: solid 2px #3882f6;
+    box-shadow: 0px 0px 10px #e5e7eb;
 }
 
 .info {
@@ -110,7 +112,8 @@ ul {
 .info-details img {
     height: auto;
     border-radius: 14px;
-    border: solid #3882f6;
+    border: solid 2px #3882f6;
+    box-shadow: 0px 0px 8px;
 }
 
 .info-details .text {
@@ -200,4 +203,5 @@ button {
 
 button.hero-butt {
     border: none;
+    box-shadow: 2px 2px 6px #e5e7eb;
 }
