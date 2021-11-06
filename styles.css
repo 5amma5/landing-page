@@ -1,16 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,700;1,700&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-* {
-    font-family: 'Roboto', sans-serif;
-}
-
-
 body, 
 ul,
 .header, 
 .hero, 
 .hero-container,
-.information, 
+.info, 
 .info-container,
 .quote,
 .quote-container,
@@ -22,17 +17,18 @@ ul,
 }
 
 body {
-    height: 100vh;
     margin: 0;
     flex-direction: column;
+    font-family: 'Roboto', sans-serif;
 }
 
 .header {
-    /* review later if space-around is better. play with padding/margin/gap too */
-    justify-content: space-around;
     align-items: center;
+    justify-content: space-around;
     background: #1f2937;
     color: #f9faf8;
+    padding: 10px;
+    border: dotted red;
 }
 
 .header .logo {
@@ -45,24 +41,24 @@ ul {
     list-style: none;
     margin: 0;
     padding: 0;
-    gap: 16px;
+    gap: 40px;
     color: #e5e7eb;
     font-size: 18px;
 }
 
 .hero {
-    flex: 1;
-    align-items: center;
     justify-content: center;
     background: #1f2937;
-    gap: 16px;
+    gap: 60px;
+    padding: 90px;
+    flex-wrap: wrap;
 }
 
 .hero-container {
     flex-direction: column;
     justify-content: space-between;
-    gap: 5px;
     max-width: 500px;
+    min-width: 100px;
 }
 
 .hero-container .title {
@@ -74,90 +70,99 @@ ul {
 .hero-container .text {
     font-size: 18px;
     color: #e5e7eb;
+    padding-bottom: 10px;
 }
 
 .hero img {
-    width: 300px;
-    height: auto;
+    width: auto;
+    height: 310px;
+    flex-shrink: 3;
 }
 
-.information {
-    flex: 1;
+.info {
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
+    margin: 55px;
 }
 
-.information .title {
+.info .title {
     font-size: 36px;
     font-weight: 900;
     color: #1f2937;
 }
 
 .info-container {
-    align-items: center;
-    justify-content: center;
-    gap: 15px;
+    gap: 40px;
+    padding: 40px;
+    flex-wrap: wrap;
+}
+
+.info-details img, .info-details .text {
+    max-width: 175px;  
 }
 
 .info-details {
     align-items: center;
     justify-content: center;
-    max-width: 90px;
     font-size: 11px;
     text-align: center;
 }
 
 .info-details img {
-    width: 90px;
     height: auto;
     border-radius: 14px;
     border: solid #3882f6;
 }
 
+.info-details .text {
+    font-size: 18px;
+    color: #1f2937;
+}
+
 .quote {
     background-color: #e5e7eb;
-    flex: 1;
     justify-content: center;
+    min-height: 430px;
 }
 
 .quote-container {
     flex-direction: column;
-    align-items: center;
     justify-content: center;
-    max-width: 800px;
-    gap: 10px;
+    margin: 50px auto;
+    max-width: 900px;
+    gap: 20px;
+
 }
 
 .quote .text {
     font-size: 36px;
     font-style: italic;
     font-weight: 200;
+    /* margin: 36px 36px 0 36px; */
 }
 
 .quote .name {
     align-self: flex-end;
-    font-weight: bold;
-    font-size: 24px;
-    padding-right: 50px;
+    justify-content: flex-start;
+    font-size: 26px;
+    font-weight: 600;
+    color: #1f2937;
+    margin-right: 100px;
 }
 
 .call-action {
     border: dotted red;
-    flex: 1;
-    align-items: center;
     justify-content: center;
+    margin: 100px auto;
 }
 
 .call-container {
     align-items: center;
-    justify-content: space-around;
-    max-width: 800px;
     border-radius: 10px;
     background-color: #3882f6;
     color: white;
-    gap: 80px;
-    padding: 50px;
+    gap: 100px;
+    padding: 50px 100px;
 }
 
 .call-details {
@@ -178,17 +183,21 @@ ul {
     justify-content: center;
     align-items: center;
     background-color: #1f2937;
+    font-size: 18px;
     color: #e5e7eb;
+    padding: 30px;
 }
 
 button {
-    width: 150px;
-    height: 30px;
+    width: 140px;
+    height: 40px;
     background: #3882f6;
     color: #f9faf8;
+    font-size: 20px;
     font-weight: bold;
     border-radius: 5px;
     border: 1px solid #f9faf8;
+    flex-shrink: 0;
 }
 
 button.hero-butt {
